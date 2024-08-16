@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="NERC Field Spectroscopy Facility">
 <meta property="og:title" content="Other Facilities">
-<meta property="og:url" content="https://nerc-fsf.github.io/instruments/resources/facilities">
+<meta property="og:url" content="http://localhost:4000/instruments/resources/facilities">
 
 
   <meta property="og:description" content="The NERC FSF Website">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="https://nerc-fsf.github.io/instruments/resources/facilities">
+<link rel="canonical" href="http://localhost:4000/instruments/resources/facilities">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "https://nerc-fsf.github.io/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -87,6 +87,15 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
 
 <!-- end custom head snippets -->
 
@@ -174,17 +183,49 @@
     
       <li>
         
-          <a href="/training/"><span class="nav__sub-title">Training and Resources</span></a>
+          <span class="nav__sub-title">Field Spectroscopy -- An Overview</span>
         
 
+        
+        <ul>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_1">1. The Role of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_2">2. Radiometry</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_3">3. Principles of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_4">4. Design of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_5">5. Calibration of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_6">6. Field and Laboratory Methodology</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_7">7. Data Processing</a></li>
+          
+        </ul>
         
       </li>
     
       <li>
         
-          <a href="/training/tutorials"><span class="nav__sub-title">Online Tutorials</span></a>
+          <span class="nav__sub-title">Earth Observation Data Processing Tutorial</span>
         
 
+        
+        <ul>
+          
+            <li><a href="/training/eodataprocessing/tutorial_1">1. Computer Setup Instructions</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_2">2. Processing Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_3">3. Creating Remote Sensing Products with Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_4">4. UAV Imagery Processing with ESA SNAP</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_5">5. Classification of Imagery in ESA SNAP</a></li>
+          
+        </ul>
         
       </li>
     
@@ -212,7 +253,7 @@
           
             <li><a href="/training/resources/reading">Reading Lists</a></li>
           
-            <li><a href="/training/resources/fsf-github">NERC FSF GitHub</a></li>
+            <li><a href="/training/resources/post-processing">Data Processing Software</a></li>
           
             <li><a href="/instruments/resources/fov-calc">Field of View Calculator</a></li>
           
@@ -250,7 +291,31 @@
 
       <section class="page__content" itemprop="text">
         
-        
+        <p>The Field Spectroscopy Facility exists as just one of many facilities provided by the Natural Environment Research Council. 
+As outlined on the <a href="https://www.ukri.org/councils/nerc/facilities-and-resources/#contents-list">homepage discussing NERC facilities</a>, which also includes details on how to include facilities as part of 
+grant applications, the goal is to provide “world-leading services, facilities and resources available to environmental scientists and UK researchers”.</p>
+
+<p>The NERC Field Spectroscopy Facility works closely with two other NERC facilities, as well as with a National Centre for Earth Observation capability service. These are:</p>
+
+<ul>
+  <li>
+    <p><strong><a href="https://gef.nerc.ac.uk/">NERC Geophysical Equipment Facility</a></strong> – NERC GEF provides geophysical instrumentation to support both land-based and seabed research, and provides expert advice
+in geophysics. The facility is based in Edinburgh along with FSF, and operates under a similar model. If your research would particularly benefit from the use of a terrestrial laser scanning system,
+NERC GEF can supply such instruments to you.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://neodaas.ac.uk/">NERC Earth Observation Data Analysis and Artificial-Intelligence Service</a></strong> – NEODAAS provides a service in earth observation data processing and analysis,
+as well as providing on all aspects of satellite remote sensing. Services include airborne data processing, an AI and machine learning service for use in imagery analysis and a code optimization service. 
+NEODASS also works closely with FSF in providing an <a href="/training/workshops/2024">annual workshop</a> on remote sensing, which is free to attend for UK based postgraduate students.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://airborne.geog.kcl.ac.uk/">NCEO Airborne Earth Observatory</a></strong> – The National Centre for Earth Observation (NCEO) Airborne Earth Observatory (NAEO), based at Harpenden, maintains and operates the UK’s national capability for airborne remote
+sensing instrumentation. FSF and the NCEO Airborne Earth Observatory work closely in the calibration of hyperspectral imagers and spectrometers, as well as providing support for each other in projects requiring ground based and airborne imagery.</p>
+  </li>
+</ul>
+
+<p>A full list of NERC facilities can be found at <a href="https://www.ukri.org/councils/nerc/facilities-and-resources/find-a-nerc-facility-or-resource/">UKRI NERC’s facilities homepage</a>.</p>
+
 
         
       </section>

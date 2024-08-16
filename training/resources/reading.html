@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="NERC Field Spectroscopy Facility">
 <meta property="og:title" content="Reading Lists">
-<meta property="og:url" content="https://nerc-fsf.github.io/training/resources/reading">
+<meta property="og:url" content="http://localhost:4000/training/resources/reading">
 
 
   <meta property="og:description" content="The NERC FSF Website">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="https://nerc-fsf.github.io/training/resources/reading">
+<link rel="canonical" href="http://localhost:4000/training/resources/reading">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "https://nerc-fsf.github.io/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -87,12 +87,21 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
 
 <!-- end custom head snippets -->
 
   </head>
 
-  <body class="layout--single wide">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -174,17 +183,49 @@
     
       <li>
         
-          <a href="/training/"><span class="nav__sub-title">Training and Resources</span></a>
+          <span class="nav__sub-title">Field Spectroscopy -- An Overview</span>
         
 
+        
+        <ul>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_1">1. The Role of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_2">2. Radiometry</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_3">3. Principles of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_4">4. Design of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_5">5. Calibration of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_6">6. Field and Laboratory Methodology</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_7">7. Data Processing</a></li>
+          
+        </ul>
         
       </li>
     
       <li>
         
-          <a href="/training/tutorials"><span class="nav__sub-title">Online Tutorials</span></a>
+          <span class="nav__sub-title">Earth Observation Data Processing Tutorial</span>
         
 
+        
+        <ul>
+          
+            <li><a href="/training/eodataprocessing/tutorial_1">1. Computer Setup Instructions</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_2">2. Processing Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_3">3. Creating Remote Sensing Products with Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_4">4. UAV Imagery Processing with ESA SNAP</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_5">5. Classification of Imagery in ESA SNAP</a></li>
+          
+        </ul>
         
       </li>
     
@@ -212,7 +253,7 @@
           
             <li><a href="/training/resources/reading" class="active">Reading Lists</a></li>
           
-            <li><a href="/training/resources/fsf-github">NERC FSF GitHub</a></li>
+            <li><a href="/training/resources/post-processing">Data Processing Software</a></li>
           
             <li><a href="/instruments/resources/fov-calc">Field of View Calculator</a></li>
           
@@ -250,7 +291,110 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li>
+<a href="#texts-in-remote-sensing">Texts in Remote Sensing</a><ul>
+<li><a href="#fundamental-theory">Fundamental Theory</a></li>
+<li><a href="#general-introductions-to-remote-sensing">General Introductions to Remote Sensing</a></li>
+<li>
+<a href="#remote-sensing-for-specific-disciplines">Remote Sensing for Specific Disciplines</a><ul>
+<li><a href="#atmospheric-science">Atmospheric Science</a></li>
+<li><a href="#ecology">Ecology</a></li>
+<li><a href="#marine-science">Marine Science</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#image-analysis">Image Analysis</a><ul>
+<li><a href="#introductions-to-imagery-analysis">Introductions to Imagery Analysis</a></li>
+<li><a href="#advanced-imagery-analysis">Advanced Imagery Analysis</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+          </aside>
         
+        <h1 id="texts-in-remote-sensing">Texts in Remote Sensing</h1>
+
+<h2 id="fundamental-theory">Fundamental Theory</h2>
+
+<ul>
+  <li>
+<strong>Michael Bukhstab, <em>Applied Photometry, Radiometry, and Measurements of Optical Losses</em>, 2nd Edition (Springer, 2019).</strong> A detailed overview from first principles of the fundamental science behind remote sensing and spectroscopy. Very heavy mathematics and physics focus, so not suggested as a general overview, but for more advanced knowledge of the field, and as a useful reference for the science governing remote sensing, this is a standard textbook.</li>
+  <li>
+<strong>Dimitris G. Manolakis, Ronald B. Lockwood and Thomas Cooley, <em>Hyperspectral Imaging Remote Sensing: Physics, Sensors, and Algorithms</em>, 1st Edition (Cambridge University Press, 2016).</strong> A detailed discussion on the principles of hyperspectral imaging, from radiometry, to design of imagers, to field application. The standard reference for hyperspectral imaging. While geared primarily towards hyperspectral imaging, the science and design considerations discussed are shared with point based spectroscopy.</li>
+  <li>
+<strong>William G. Rees, <em>Physical Principles of Remote Sensing</em>, 3rd Edition (Cambridge University Press, 2016).</strong> An excellent overview of all aspects of remote sensing. Not as mathematics or physics heavy as <em>Applied Photometry, Radiometry, and Measurements of Optical Losses</em> or <em>Hyperspectral Imaging Remote Sensing: Physics, Sensors, and Algorithms</em>, but more advanced than <em>Practical Handbook of Remote Sensing</em>. Also covers active remote sensing, such as LiDAR. Includes exercises as well, allowing you to test your remote sensing knowledge. Chapter Six on Electro-Optical Systems directly covers the aspects of remote sensing covered by field spectroscopy.</li>
+</ul>
+
+<h2 id="general-introductions-to-remote-sensing">General Introductions to Remote Sensing</h2>
+
+<ul>
+  <li>
+<strong>Marcus Borengasser, William S. Hungate and Russell Watkins, <em>Hyperspectral Remote Sensing: Principles and Applications</em>, 1st Edition (CRC Press, 2023).</strong> A brief introduction to remote sensing. Not as extensive as the other titles provided, but gives a good first overview of the science which should ease those new to the field into understanding the concepts and principles behind it. Some good chapters on practical applications for agriculture and ecology, but content more discussed in depth by other titles.</li>
+  <li>
+<strong>Samantha Lavender and Andrew Lavender, <em>Practical Handbook of Remote Sensing</em>, 2nd Edition (CRC Press, 2023).</strong> A broad overview of remote sensing, with a focus on practical applications, particularly for ecologists. A classic introductory text for introducing the science of remote sensing to those new to the field.</li>
+</ul>
+
+<h2 id="remote-sensing-for-specific-disciplines">Remote Sensing for Specific Disciplines</h2>
+
+<h3 id="atmospheric-science">Atmospheric Science</h3>
+
+<ul>
+  <li>
+<strong>Dmitry Efremenko and Alexander Kokhanovsky, <em>Foundations of Atmospheric Remote Sensing</em>, 1st Edition (Springer, 2021).</strong> An excellent, comprehensive overview of the methods used in atmospheric remote sensing, with a focus on radiative transport models. Excellent overview of the differential optical absorption spectroscopy method.</li>
+  <li>
+<strong>Ulrich Platt and Jochen Stutz, <em>Differential Optical Absorption Spectroscopy  – Principles and Applications</em>, 1st Edition, (Springer, 2008).</strong> The classic text on DOAS methods and instrumentation by the primary experts in the field.</li>
+</ul>
+
+<h3 id="ecology">Ecology</h3>
+
+<ul>
+  <li>
+<strong>Hamlyn G. Jones and Robin A. Vaughan, <em>Remote Sensing of Vegetation – Principles, Techniques, and Applications</em>, 1st Edition (Oxford University Press U.S.A, 2010).</strong> While an older text, this detailed overview of remote sensing with a focus on vegetation is excellent for its overview of indices and how they can be used to infer biochemical and physical properties of vegetation.</li>
+  <li>
+<strong>Martin Wegmann, Benjamin Leutner and Stefan Dech, <em>Remote Sensing and GIS for Ecologists</em>, 1st Edition (Pelagic Publishing, 2016).</strong> The facility highly recommends this text to ecologists entering into the field of remote sensing. Early chapters introduce the science of remote sensing as a general overview, while later chapters discuss the pertinence of remote sensing for ecological aims. Of great benefit is the practical nature of the book, which illustrates principles via the use of R and QGIS.</li>
+</ul>
+
+<h3 id="marine-science">Marine Science</h3>
+
+<ul>
+  <li>
+<strong>Seelye Martin, <em>An Introduction to Ocean Remote Sensing</em>, 2nd Edition, (Cambridge University Press, 2014).</strong> Provides a detailed overview of the particular challenges for remote sensing in the discipline of marine science. The first chapters give an overview of remote sensing practicalities in the marine domain, while later chapters discuss techniques. Chapter Six on Ocean Colour is most pertinent to the instruments which the facility provides.</li>
+</ul>
+
+<h1 id="image-analysis">Image Analysis</h1>
+
+<h2 id="introductions-to-imagery-analysis">Introductions to Imagery Analysis</h2>
+
+<ul>
+  <li>
+<strong>Morton J. Canty, <em>Image Analysis, Classification, and Change Detection in Remote Sensing: With Algorithms for ENVI/IDL, Second Edition</em>, 2nd Edition, (CRC Press, 2010).</strong> A classic text on the use of NV5Geospatial’s ENVI software for the processing of imagery. Many of the features explored are not up to date, but the practical demonstration of data analysis in ENVI is a useful resource when combined with NV5Geospatial’s ENVI manuals and documentation.</li>
+  <li>
+<strong>Marcelo de Carvalho Alves and Luciana Sanches, <em>Remote Sensing and Digital Image Processing with R</em>, 1st Edition, (CRC Press, 2023).</strong> An excellent, hands on book – which comes with a separate lab manual – in using R for the processing of remote sensing data. With rapid advances in remote sensing and imagery processing, this may become quickly dated, but currently is a very good text for illustrating open source methods for imagery processing.</li>
+  <li>
+<strong>Martin Wegmann, Benjamin Leutner and Stefan Dech, <em>An Introduction to Spatial Data Analysis: Remote Sensing and GIS with Open Source Software</em>, 1st Edition (Pelagic Publishing, 2009).</strong> A broad, basic introduction to GIS and remote sensing with an ecological focus. Designed to lead onto <em>Remote Sensing and GIS for Ecologists</em> by the same authors.</li>
+</ul>
+
+<h2 id="advanced-imagery-analysis">Advanced Imagery Analysis</h2>
+
+<ul>
+  <li>
+<strong>Gustau Camps-Valls, Devis Tuia, Xiao Xiang Zhu and Markus Reichstein, <em>Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science and Geosciences</em>, 1st Edition (Wiley Publishing, 2021).</strong> Deep learning techniques provide a powerful tool for automation of image analysis. This text gives an overview of techniques which can be used in remote sensing, with a focus on climate and geoscience data.</li>
+  <li>
+<strong>Chi Hau Chen, <em>Signal and Image Processing for Remote Sensing</em>, 2nd Edition, (CRC Press, 2012).</strong> An in-depth discussion of the principles of algorithmic design used for imagery processing, with an aim to discuss fundamentals. As such, even though the text is over 10 years old, remains an excellent resource for imagery processing. As a result, is heavy on mathematics and computer science.</li>
+  <li>
+<strong>John A. Richards, <em>Remote Sensing Digital Image Analysis</em>, 6th Edition, (Springer, 2022).</strong> A regularly updated text on advanced imagery analysis, providing new insights into imagery analysis. A “go-to” text for referencing techniques.</li>
+  <li>
+<strong>Martin Wegmann, Benjamin Leutner and Stefan Dech, <em>Advanced Remote Sensing Analysis using Open Source Software</em>, 1st Edition, (Pelagic Publishing, 2024).</strong> The final book from Wegmann, Leutner and Dech on remote sensing data analysis, focused on advanced imagery techniques. Very usefully, this includes use of the SNAP toolbox from ESA.</li>
+</ul>
+
 
         
       </section>

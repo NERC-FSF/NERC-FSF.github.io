@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="NERC Field Spectroscopy Facility">
 <meta property="og:title" content="Learning">
-<meta property="og:url" content="https://nerc-fsf.github.io/training/">
+<meta property="og:url" content="http://localhost:4000/training/">
 
 
   <meta property="og:description" content="The NERC FSF Website">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="https://nerc-fsf.github.io/training/">
+<link rel="canonical" href="http://localhost:4000/training/">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "https://nerc-fsf.github.io/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -87,6 +87,15 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
 
 <!-- end custom head snippets -->
 
@@ -174,17 +183,49 @@
     
       <li>
         
-          <a href="/training/"><span class="nav__sub-title">Training and Resources</span></a>
+          <span class="nav__sub-title">Field Spectroscopy -- An Overview</span>
         
 
+        
+        <ul>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_1">1. The Role of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_2">2. Radiometry</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_3">3. Principles of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_4">4. Design of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_5">5. Calibration of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_6">6. Field and Laboratory Methodology</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_7">7. Data Processing</a></li>
+          
+        </ul>
         
       </li>
     
       <li>
         
-          <a href="/training/tutorials"><span class="nav__sub-title">Online Tutorials</span></a>
+          <span class="nav__sub-title">Earth Observation Data Processing Tutorial</span>
         
 
+        
+        <ul>
+          
+            <li><a href="/training/eodataprocessing/tutorial_1">1. Computer Setup Instructions</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_2">2. Processing Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_3">3. Creating Remote Sensing Products with Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_4">4. UAV Imagery Processing with ESA SNAP</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_5">5. Classification of Imagery in ESA SNAP</a></li>
+          
+        </ul>
         
       </li>
     
@@ -212,7 +253,7 @@
           
             <li><a href="/training/resources/reading">Reading Lists</a></li>
           
-            <li><a href="/training/resources/fsf-github">NERC FSF GitHub</a></li>
+            <li><a href="/training/resources/post-processing">Data Processing Software</a></li>
           
             <li><a href="/instruments/resources/fov-calc">Field of View Calculator</a></li>
           
@@ -250,7 +291,26 @@
 
       <section class="page__content" itemprop="text">
         
-        
+        <ol>
+  <li>First item with a hidden code block
+    <details>
+   <summary>Example</summary>
+
+     <pre>
+     <code class="python">
+     import os
+     os.getcwd()
+     </code>
+     </pre>
+ ```python
+ import os
+ ```
+ </details>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+</code></pre></div></div>
 
         
       </section>
