@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Creating Remote Sensing Products with Field Spectroscopy Data - NERC Field Spectroscopy Facility</title>
+<meta name="description" content="The NERC FSF Website">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="NERC Field Spectroscopy Facility">
+<meta property="og:title" content="Creating Remote Sensing Products with Field Spectroscopy Data">
+<meta property="og:url" content="http://localhost:4000/training/eodataprocessing/tutorial_3">
+
+
+  <meta property="og:description" content="The NERC FSF Website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/training/eodataprocessing/tutorial_3">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NERC Field Spectroscopy Facility Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+  <script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body class="layout--single wide2">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FSF_Small_Logo.png" alt="NERC Field Spectroscopy Facility"></a>
+        
+        <a class="site-title" href="/">
+          NERC Field Spectroscopy Facility
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/loans/">Loans</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/instruments/">Instruments</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/training/">Learning</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/impact/">Impact</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creating Remote Sensing Products with Field Spectroscopy Data">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Creating Remote Sensing Products with Field Spectroscopy Data
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#introduction-to-tutorial">Introduction to Tutorial</a></li>
+<li>
+<a href="#tutorial-steps">Tutorial Steps</a><ul>
+<li><a href="#part-one--vegetation-indices">Part One – Vegetation Indices</a></li>
+<li><a href="#part-two--convolution">Part Two – Convolution</a></li>
+</ul>
+</li>
+<li><a href="#wrapup">Wrapup</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="introduction-to-tutorial">Introduction to Tutorial</h1>
+
+<p>We will continue to work with the <strong>Absolute_Means_smoothed</strong> dataframe generated from the last session to produce remote sensing products like vegetation indices and convolved data.</p>
+
+<h1 id="tutorial-steps">Tutorial Steps</h1>
+
+<h2 id="part-one--vegetation-indices">Part One – Vegetation Indices</h2>
+
+<p>With your data now processed and converted into absolute spectral reflectance, we can look more closely at differences between the feature types. 
+We can use dimensionality reduction methods, such as spectral indices, to do this.</p>
+
+<p>A number of spectral indices have been designed to highlight different vegetation properties. 
+In this section, we will use some of them to explore differences between our feature types. A full description of the indices used can be found <a href="https://www.nv5geospatialsoftware.com/Learn/Whitepapers/Whitepaper-Detail/ArtMID/17811/ArticleID/16162/Vegetation-Analysis-Using-Vegetation-Indices-in-ENVI">here</a></p>
+
+<p>One of the most commonly used vegetation indices is the Normalized Difference Vegetation Index (NDVI). When using Sentinel-2 data, the equation to calculate NDVI is –</p>
+
+<p>$$ NDVI = \dfrac{B_8 - B_4}{B_8 + B_4} $$</p>
+
+<p>where Band 8 is equivalent to 842 nm, and Band 4 is equivalent to 665 nm.</p>
+
+<ol>
+  <li>Using the inbuilt Python function .iloc, we can calculate NDVI for our leaf means. First, let’s look at what iloc does.
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">315</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Here, <code class="language-plaintext highlighter-rouge">iloc</code> takes the index number for the Absolute_Leaf_Means dataframe, and reports what is at that value – here, the reflectance of our different leaf groups, and also, as ‘Name’, the wavelength at which those reflectances were measured. 
+You should see that ‘Name’ equals 842.0 nm. Notice the offset between the iloc value given and our wavelength value – 350, which is the wavelength value at which our dataframe begins.
+With this in mind, we can now proceed to calculate NDVI, first generating a new dataframe to store our output:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">Indices</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">Indices</span><span class="p">[</span><span class="s">'NDVI'</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">492</span><span class="p">]</span> <span class="o">-</span> <span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">315</span><span class="p">])</span> <span class="o">/</span> 
+                               <span class="p">(</span><span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">492</span><span class="p">]</span> <span class="o">+</span> <span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">315</span><span class="p">]))</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">Indices</span><span class="p">[</span><span class="s">'NDVI'</span><span class="p">])</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+<strong>Question:</strong> - The Carotenoid Reflectance Index looks at the the concentrations of carotenoids in vegetation. Carotenoids function in light absorption processes in plants, as well as in protecting plants from the harmful effects of too much light. Higher CRI1 values mean greater carotenoid concentration relative to chlorophyll. The value of this index ranges from 0 to more than 15. The common range for green vegetation is 1 to 12:
+ $$CRI = \dfrac{1}{510} - \dfrac{1}{550}$$ 
+ With this information, calculate the CRI for your data set.
+        <details class="notice--success">
+    <summary>Answer</summary>
+      <pre>
+      <code class="python">
+      Indices['CRI'] = ((1 / Absolute_Means_smoothed.iloc[160]) - (1 / Absolute_Means_smoothed.iloc[200]))
+      </code>
+      </pre>
+  </details>
+      </li>
+      <li>
+<strong>Question:</strong> - The Plant Senescence Reflectance Index maximizes the sensitivity of the index to the ratio of bulk carotenoids (for example, alpha-carotene and beta-carotene) to chlorophyll. An increase in PSRI indicates increased canopy stress (carotenoid pigment), the onset of canopy senescence, and plant fruit ripening. Applications include vegetation health monitoring, plant physiological stress detection, and crop production and yield analysis. The value of this index ranges from -1 to 1. The common range for green vegetation is -0.1 to 0.2:
+ $$PSRI = \dfrac{680 - 500}{750}$$ 
+ With this information, calculate the PSRI for your data set.
+        <details class="notice--success">
+    <summary>Answer</summary>
+      <pre>
+      <code class="python">
+      Indices['PSRI'] = ((Absolute_Means_smoothed.iloc[330] - Absolute_Means_smoothed.iloc[150] ) / ( Absolute_Means_smoothed.iloc[400]))
+      </code>
+      </pre>
+  </details>
+      </li>
+      <li>
+<strong>Question:</strong> - The Cellulose Absorption Index  is a reflectance measurement that quantifies dried plant material. Strong absorption features present in the 2000nm to 2200nm range indicate strong presence of cellulose. 
+ $$CAI = 0.5(2000 + 2200) - 2100$$ 
+ Determine the Cellulose Absorption Index for your data set.
+        <details class="notice--success">
+    <summary>Answer</summary>
+      <pre>
+      <code class="python">
+      Indices['CAI'] = (0.5 * (Absolute_Means_smoothed.iloc[1650] + Absolute_Means_smoothed.iloc[1850])) - (Absolute_Means_smoothed.iloc[1750])
+      </code>
+      </pre>
+  </details>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="part-two--convolution">Part Two – Convolution</h2>
+
+<p>If your research relates to specific multispectral imaging sensors e.g. Sentinel 2, it can be useful to resample your hyperspectral data so that it matches the bands of your specific sensor. 
+We can do this by convolving the hyperspectral data to a multispectral sensor’s “spectral response function”.</p>
+
+<p>The Field Spectroscopy Facility has a Python package available for swift convolution of hyperspectral data to Sentinel-2 and WorldView multispectral imagery. 
+For this tutorial, we’ll look at how this package works, by convolving the data for one band of Sentinel-2 – Band 4.</p>
+
+<p>Band 4 of the Sentinel-2 sensor is also know as the “Red” band. The centre wavelength – the wavelength at which it has the most sensitivity – is 665 nm.</p>
+
+<p>The band, however, is sensitive to other wavelengths (what is termed as its ‘spectral response feature’), from 646 nm to 684 nm.</p>
+
+<p>In order to accurately compare our hyperspectral data to Band 4, we must convolve the hyperspectral data within the wavelength regions of Band 4’s SRF. 
+This requires knowledge of the varying sensitivity of the band. The .csv file ‘Sentinel 2 SRF.csv’, contained in the folder which you downloaded, contains this information.</p>
+
+<ol>
+  <li>Read in the Sentinel-2 SRF as a pandas dataframe:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">Sentinel_2_bands</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'Sentinel 2 SRF.csv'</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Knowing the starting and ending wavelength of the SRF of interest, we can now conduct convolution, which  mathematically can be expressed as the result of the trapezoidal integration of the product of the multiplication hyperspectral data over the SRF region by the SRF, divided by the result of the trapezoidal integration of the SRF itself:
+$$R_v^k=\int_{v_1^k}^{v_2^k} R_h(v) S_b(v) \mathrm{d} v / \int_{v_1^k}^{v_2^k} S_b(v) \mathrm{d} v$$
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">Indices</span><span class="p">[</span><span class="s">'Band 4 - Red'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">trapezoid</span><span class="p">((</span><span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">298</span><span class="p">:</span><span class="mi">334</span><span class="p">]).</span><span class="n">mul</span><span class="p">(</span><span class="n">Sentinel_2_bands</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">298</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">),</span> <span class="n">axis</span> <span class="o">=</span><span class="mi">0</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">trapezoid</span><span class="p">((</span><span class="n">Sentinel_2_bands</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">298</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="mi">3</span><span class="p">]),</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">Indices</span><span class="p">[</span><span class="s">'Band 4 - Red'</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Considering this code in more detail – <code class="language-plaintext highlighter-rouge">np.trapezoid</code> is the mathematical function conducted on the data; <code class="language-plaintext highlighter-rouge">.iloc[298:334]</code> gives the region to conduct the convolution 
+(<code class="language-plaintext highlighter-rouge">iloc[298]</code> is equal to wavelength 646 nm (the narrowest edge of the SRF), and <code class="language-plaintext highlighter-rouge">iloc[334]</code> is equal to wavelength 684 nm, the broadest range of the SRF); 
+and the <code class="language-plaintext highlighter-rouge">,3</code> after <code class="language-plaintext highlighter-rouge">298:334</code> for the integration of the Sentinel 2 bands relates to the column number in which the SRF for Band 4 is stored 
+(the relation between column number and band in the SRF file is Band Number - 1). The final output gives the reflectance value of the convoluted hyperspectral data.</p>
+
+    <ul>
+      <li>
+<strong>Question:</strong> - Repeat the process as outlined above, but for Band 3, ‘Green’. Band 3 has a centre wavelength at 560 nm. The SRF for Band 3 extends from 538 nm to 583 nm. Modifying the code above, create a row in Indices called ‘Band 3 - Green’ that provides the output of the convolution of the hyperspectral data to the Band 3 SRF.
+        <details class="notice--success">
+    <summary>Answer</summary>
+      <pre>
+      <code class="python">
+      Indices['Band 3 - Green'] = (np.trapezoid((Absolute_Means_smoothed.iloc[188:233]).mul(Sentinel_2_bands.iloc[188:233, 2],axis = 0), axis =0)) / (np.trapezoid((Sentinel_2_bands.iloc[188:233, 2]), axis = 0))
+      </code>
+      </pre>
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li>It is possible to use the same code to generate the values for each of the Sentinel-2 bands, or indeed for any satellite sensor provided you know the spectral response feature of it. 
+To expedite the process, however, we will use the FieldSpecUtils package, which we installed earlier:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">FieldSpecUtils</span> <span class="kn">import</span> <span class="n">Convolution</span>
+</code></pre></div>    </div>
+  </li>
+  <li>We can now run our convolution as follows:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">Convolution</span><span class="p">.</span><span class="n">S2</span><span class="p">(</span><span class="n">Absolute_Means_smoothed</span><span class="p">,</span> <span class="n">Sentinel_2_bands</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Our hyperspectral data has now been convolved to multispectral bands equivalent to Sentinel-2. We can see how this looks by plotting the data output of the convolution, <strong>Ploths_with_convolved_bands.csv</strong>:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">collated_convolved</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"Plots_with_convolved_bands.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">collated_convolved</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">legend</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Centre Wavelength (nm) of Band with Band Number"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Absolute Reflectance"</span><span class="p">)</span>
+<span class="n">title</span><span class="p">(</span><span class="s">"Hyperspectral convolved broadband reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="s">"490 -- Band 2"</span><span class="p">,</span> <span class="s">"560 -- Band 3"</span><span class="p">,</span> <span class="s">"665 -- Band 4"</span><span class="p">,</span> <span class="s">"705 -- Band 5"</span><span class="p">,</span> <span class="s">"740 -- Band 6"</span><span class="p">,</span>
+         <span class="s">"783 -- Band 7"</span><span class="p">,</span> <span class="s">"842 -- Band 8"</span><span class="p">,</span> <span class="s">"865 -- Band 8a"</span><span class="p">,</span> <span class="s">"1610 -- Band 11"</span><span class="p">,</span> <span class="s">"2190 -- Band 12"</span><span class="p">],</span>
+        <span class="n">rotation</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s">"Plot number and vegetation type"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">"Convolved_Hyperspectral_Plot_Data_to_S2_Multispectral_Bands.pdf"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="wrapup">Wrapup</h1>
+<p>In this session, you’ve learned how to utilize field spectrometer data to generate remote sensing products like indices or convolved products. More advanced techniques, such as
+principal component analysis, can also be conducted using data in this format.</p>
+
+<p>In the next session, we will discuss the process of UAV imagery using ESA SNAP, but for the spectral unmixing session in the final tutorial, you will require your spectral library as generated
+in the last session.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2024 <a href="http://localhost:4000">NERC Field Spectroscopy Facility</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Design and Calibration of Field Spectrometers - NERC Field Spectroscopy Facility</title>
+<meta name="description" content="The NERC FSF Website">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="NERC Field Spectroscopy Facility">
+<meta property="og:title" content="Design and Calibration of Field Spectrometers">
+<meta property="og:url" content="http://localhost:4000/training/fieldspectroscopy/tutorial_3">
+
+
+  <meta property="og:description" content="The NERC FSF Website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/training/fieldspectroscopy/tutorial_3">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NERC Field Spectroscopy Facility Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+  <script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FSF_Small_Logo.png" alt="NERC Field Spectroscopy Facility"></a>
+        
+        <a class="site-title" href="/">
+          NERC Field Spectroscopy Facility
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/loans/">Loans</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/instruments/">Instruments</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/training/">Learning</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/impact/">Impact</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/training/"><span class="nav__sub-title">Learning</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Field Spectroscopy -- An Overview</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_1">1. The Role of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_2">2. The Principles of Field Spectroscopy</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_3" class="active">3. Design and Calibration of Field Spectrometers</a></li>
+          
+            <li><a href="/training/fieldspectroscopy/tutorial_4">4. Best Practices for Field Spectroscopy</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Earth Observation Data Processing Tutorial</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/training/eodataprocessing/tutorial_1">1. Computer Setup Instructions</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_2">2. Processing Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_3">3. Creating Remote Sensing Products with Field Spectroscopy Data</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_4">4. UAV Imagery Processing with ESA SNAP</a></li>
+          
+            <li><a href="/training/eodataprocessing/tutorial_5">5. Classification of Imagery in ESA SNAP</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Workshops</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/training/workshops/2024">NEODAAS-FSF Remote Sensing Workshop 2024</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Resources</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/training/resources/reading">Reading Lists</a></li>
+          
+            <li><a href="/training/resources/post-processing">Data Processing Software</a></li>
+          
+            <li><a href="/resources/FOV_Calculator">Field of View Calculator</a></li>
+          
+            <li><a href="/instruments/resources/facilities">Other Facilities</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Design and Calibration of Field Spectrometers">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Design and Calibration of Field Spectrometers
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#the-components-of-a-field-spectroradiometer">The Components of a Field Spectroradiometer</a></li>
+<li>
+<a href="#calibration-of-a-field-spectroradiometer">Calibration of a field spectroradiometer</a><ul>
+<li><a href="#spectral-calibration">Spectral Calibration</a></li>
+<li><a href="#radiometric-calibration">Radiometric Calibration</a></li>
+</ul>
+</li>
+<li><a href="#other-calibration-metrics">Other Calibration Metrics</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="the-components-of-a-field-spectroradiometer">The Components of a Field Spectroradiometer</h2>
+<p>A field spectrometer, at it’s most basic, is composed of:</p>
+
+<ul>
+  <li>
+<strong>Diffraction Gratings</strong> – an optical element, which disperses energy into its constituent wavelengths (e.g. white light dispersed into individual colours, similar to an optical prism)</li>
+  <li>
+<strong>Detector array</strong> – array made of photosensitive material that converts incident energy into a voltage which is then measured by the internal circuitry (the “raw signal”, usually called intensity or digital number)</li>
+  <li>
+<strong>Entrance slits</strong> – allowing for energy to enter the system</li>
+</ul>
+
+<p>Although used interchangeably, there is a distinction between a spectrometer and a <strong>spectroradiometer</strong>, namely, that the latter includes:</p>
+
+<ul>
+  <li>
+<strong>Foreoptics</strong> – lenses or fibre light guides which direct light into the system, and which have associated <strong>calibration coefficients</strong> that allows you to convert the raw signal as measured by the array to a radiometric quantity i.e. radiance.</li>
+</ul>
+
+<p>The spectral range covered by a field spectroradiometer is determined by the detector array.</p>
+
+<p>For field spectroscopy, where spectroradiometers are often quoted as being <strong>full range</strong> – i.e., covering the spectral range from 350 nm to 2500 nm – the use of a single array sensitive over the entire range is not possible. 
+Therefore, a full range field spectroradiometer will often include three, separate detector arrays:</p>
+
+<ul>
+  <li>Silicon photodiode array – covering the UV, visible (VIS) and near infrared (NIR) range, from 350 nm to 1050 nm.</li>
+  <li>Indium Gallium Arsenide (InGaAs) – covering the NIR to short wave infrared (SWIR) range, from 900 nm to 1800 nm.</li>
+  <li>Extended InGaAs – covering the SWIR range, from 1750 nm to 2500 nm.</li>
+</ul>
+
+<p>Note, that all three arrays overlap in their range. This is important to bear in mind when taking field measurements and for post-processing, as the regions which overlap must be corrected for to arrive at a “true” signal.</p>
+
+<p>Finally, to separate the incoming energy so that it can be diverted to all three arrays, an additional component is included:</p>
+
+<ul>
+  <li>
+<strong>Beam splitter</strong> – an optical element that splits incoming energy into two paths which are perpendicular to each other.</li>
+</ul>
+
+<p>Taken all together, a full range field spectroradiometer will consist of an entrance slit with attached foreoptic, three arrays (a silicon photodiode array, a InGaAs array, and an extended InGaAs array), 
+three diffraction gratings, and two beam splitters.</p>
+
+<h2 id="calibration-of-a-field-spectroradiometer">Calibration of a field spectroradiometer</h2>
+<p>As mentioned, each array converts incident energy into a voltage. 
+The pixels of each array are sensitive to one particular wavelength, and thus the voltage (more often described as a “digital number”) measured at each pixel represents the energy at that particular wavelength.</p>
+
+<p>The goal of a spectroradiometer calibration, in brief, is to – firstly – produce a coefficient for each pixel that will map it to the wavelength at which it has the most sensitivity to (it’s <strong>centre wavelength</strong>), and – secondly – a coefficient or gain that will convert the voltage recorded at that pixel to a radiance value.</p>
+
+<h3 id="spectral-calibration">Spectral Calibration</h3>
+<p>Spectral calibration consists of measuring the response of the spectroradiometer when viewing a source with a known wavelength output. 
+This source can either be <a href="https://www.newport.com/f/pencil-style-calibration-lamps">atomic emission line lamps </a>, which have high intensity emission peaks with well characterised wavelengths;
+a monochromator system, which consists of a stable, broadband quartz tungsten halogen (QTH) lamp from which specific energy bands at individual wavelengths can be isolated using diffraction gradients;
+or lasers, which provide a high intensity beam that has a narrow wavelength range.</p>
+
+<p>The concept behind each source is the same, however – provision of a known wavelength.</p>
+
+<p>As an example, consider a spectral calibration using atomic emission line lamps. An atomic emission line lamp utilizing mercury vapour has a known emission peak at 435.84 nm. With the spectroradiometer viewing the lamp, a measurement is taken.
+The pixel at which the highest digital number is recorded, which could exist between pixels e.g. pixel number 60.4, is matched to the 435.84 nm peak. 
+This process is then replicated with many different emission peaks (for example, mercury lamps have additional peaks at 546.07 nm,  578.10 nm etc.), to arrive at an array of measurements where pixel number is matched to a known wavelength.
+Using a polynomial fit (often to the 3rd degree), a relationship between known wavelengths and pixels can be determined, and from this fit, the centre wavelength of each pixel can be determined.</p>
+
+<h3 id="radiometric-calibration">Radiometric Calibration</h3>
+<p>With each pixel in the array mapped to a wavelength value, a radiometric calibration can be conducted.</p>
+
+<p>Similar to a spectral calibration, the spectroradiometer is positioned is that it can view a source. In this case, the source will have a well characterized and stable radiance output, at which the radiance at each centre wavelength of the pixel is known.
+The source can either be a radiance sphere, which consists of an illuminated uniform integrating sphere whose output radiance is known; or a reference panel which is illuminated by a lamp with known irradiance (the radiance from the panel can be calculated using the conversion from radiant exitance to radiance, as described in section 2).</p>
+
+<p>A spectroradiometer measurement when viewing the source is taken. The coefficients, $A_L$, can then be determined by:</p>
+
+<p>$$ A_L = \frac{L_{source}}{DN} $$</p>
+
+<p>where $L_{source}$ is the known radiance output of the source, and $DN$ is the voltage/digital number as recorded by the spectroradiometer.</p>
+
+<p>With $A_L$ determined, the digital number recorded by a spectroradiometer in the field can then be converted to a radiance value by multiplying the measured $DN$ at each pixel by it’s associated $A_L$ coefficient.</p>
+
+<h2 id="other-calibration-metrics">Other Calibration Metrics</h2>
+<p>The calibration methodology outlined here is simplified. The overall process of calibration is more involved, 
+and consists of other metrics, such as determination of the spectral resolution and spectral response in the spectral domain, as well as linearity effects in the radiometric domain. Uncertainty budgets are also included as part of calibration routines at the facility. 
+The <a href="/instruments/uav/headwall">calibration of hyperspectral imagers</a> is more advanced.<br>
+At the facility, we conduct full calibrations for all of our spectroradiometers and imaging systems, and are happy to share methodologies with those interested. For more details, please contact the facility at fsf@ed.ac.uk.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2024 <a href="http://localhost:4000">NERC Field Spectroscopy Facility</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

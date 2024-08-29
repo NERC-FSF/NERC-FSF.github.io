@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Processing Field Spectroscopy Data - NERC Field Spectroscopy Facility</title>
+<meta name="description" content="The NERC FSF Website">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="NERC Field Spectroscopy Facility">
+<meta property="og:title" content="Processing Field Spectroscopy Data">
+<meta property="og:url" content="http://localhost:4000/training/eodataprocessing/tutorial_2">
+
+
+  <meta property="og:description" content="The NERC FSF Website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/training/eodataprocessing/tutorial_2">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NERC Field Spectroscopy Facility Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide2">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FSF_Small_Logo.png" alt="NERC Field Spectroscopy Facility"></a>
+        
+        <a class="site-title" href="/">
+          NERC Field Spectroscopy Facility
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/loans/">Loans</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/instruments/">Instruments</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/training/">Learning</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/impact/">Impact</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Processing Field Spectroscopy Data">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Processing Field Spectroscopy Data
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#introduction-to-tutorial">Introduction to Tutorial</a></li>
+<li>
+<a href="#tutorial-steps">Tutorial Steps</a><ul>
+<li><a href="#part-one--creating-a-new-workbook-and-importing-modules">Part One – Creating a New Workbook, and Importing Modules</a></li>
+<li><a href="#part-two--importing-raw-spectra-files">Part Two – Importing raw spectra files</a></li>
+<li><a href="#part-three--grouping-and-averaging-data">Part Three – Grouping and Averaging Data</a></li>
+<li><a href="#part-four--interpolation-overlap-matching-and-jump-correction">Part Four – Interpolation, overlap matching, and jump correction</a></li>
+<li><a href="#part-five--relative-vs-absolute-reflectance">Part Five – Relative vs Absolute Reflectance</a></li>
+<li><a href="#part-six---waterband-removal-over-the-1780-nm-to-1950-nm-range-and-smoothing-across">Part Six –  Waterband removal over the 1780 nm to 1950 nm range, and smoothing across</a></li>
+<li><a href="#part-seven---final-processing-stages-for-data">Part Seven –  Final processing stages for data</a></li>
+</ul>
+</li>
+<li><a href="#wrapup">Wrapup</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="introduction-to-tutorial">Introduction to Tutorial</h1>
+
+<p>This session will take you through the basic steps of processing, correcting, and visualising data acquired from a field spectrometer. 
+The tools discussed in this session can be used to read data collected using any of the 350 nm to 2500 nm <a href="/instruments/">full range field spectrometers provided by the facility</a></p>
+
+<p>The data in this session was collected in May 2024 at a beach 40 km East of Edinburgh, United Kingdom (Tyninghame Links, 56.023, -2.592).
+Data was collected using a <a href="/instruments/frfss/svc_hr1024i">Spectra Vista Corporation HR-1024i full range field spectroradiometer</a> in nadir viewing mode.
+Measurements were taken over a variety of different features, such as sand, dune grasses, and saltmarsh bogs.</p>
+
+<p><img src="http://localhost:4000/assets/images/training/eodata/session_2/Tyninghame.png" alt="alt"></p>
+
+<p>Prior to this ground based data collection, multispectral UAV imagery was collected in March 2024.
+When collected in tandem, ground based and UAV measurements can work synergistically to produce powerful remote sensing products.
+We will develop a spectral library using the ground based hyperspectral data to help analyse the UAV imagery that we will look at later in today’s workshop.</p>
+
+<h1 id="tutorial-steps">Tutorial Steps</h1>
+
+<h2 id="part-one--creating-a-new-workbook-and-importing-modules">Part One – Creating a New Workbook, and Importing Modules</h2>
+
+<ol>
+  <li>Activate your field_spectroscopy environment you created in the last session, either via Anaconda Navigator, or via command prompt, <code class="language-plaintext highlighter-rouge">conda activate field_spectroscopy</code>
+</li>
+  <li>Launch jupyterlab, via the Anaconda Navigator GUI or via the command prompt, <code class="language-plaintext highlighter-rouge">jupyter lab</code>
+</li>
+  <li>In Jupyter Lab, navigate to the folder which you downloaded from the GitHub link provided in the last session.</li>
+  <li>Open a new Notebook, by clicking <strong>New Launcher</strong>, then selecting <strong>Python 3 (ipykernel)</strong> under Notebook.</li>
+  <li>In a new cell, copy and paste the following code, and then <strong>Run</strong> the cell using the play button in the ribbon, or by pressing <code class="language-plaintext highlighter-rouge">Ctrl + Enter</code>
+</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>    <span class="c1">#a module that allows us to "talk" with our operating system, necessary for handling paths, files and so on
+</span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span> <span class="c1">#a more specific path handling module that allows us to quickly create path names
+</span><span class="kn">from</span> <span class="nn">specdal</span> <span class="kn">import</span> <span class="n">Collection</span><span class="p">,</span> <span class="n">Spectrum</span><span class="p">,</span> <span class="n">read</span> <span class="c1">#We import our main package, specdal, and ask to only import certain key functions
+</span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>   <span class="c1">#Pandas is a powerful module for the handling of data sets
+</span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>   <span class="c1">#matplotlib emulates the functions of MATLAB. Here, we tell matplotlib to only import one of it's functions, the pyplot function, and to import it with the identifier 'plt'
+</span><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">xlabel</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">legend</span>   <span class="c1">#We go even further by asking pyplot to only import some of it's subfunctions
+</span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">savgol_filter</span>   <span class="c1">#We will use this to smooth our data
+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span> <span class="c1">#We require numpy for integration functions that will be used during convolution
+</span><span class="kn">import</span> <span class="nn">FieldSpecUtils</span> <span class="k">as</span> <span class="n">FSF</span>
+</code></pre></div></div>
+
+<h2 id="part-two--importing-raw-spectra-files">Part Two – Importing raw spectra files</h2>
+
+<p>In this first part of the session, we will use the SpecDAL module to help us import the raw spectral files collected (contained in the Data folder, in files with the .sig extension), assign to a pandas dataframe object,
+and – in the next parts – conduct basic corrections, such as interpolation, overlap matching, and jump correction.</p>
+
+<ol>
+  <li>We will now use the SpecDAL package to read the .sig files found in our “Data” directory, and assign them to a collection of spectra which we can analyse and process further.
+Copy and paste, then run, the following code into a new cell (from this point onwards, when new code is introduced, copy and paste it into a new cell below the last, and run):
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">Tyninghame</span> <span class="o">=</span> <span class="n">Collection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Tyninghame'</span><span class="p">,</span> <span class="n">directory</span> <span class="o">=</span><span class="s">'Data'</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Let’s now take a look at this spectra collection. First of all, let’s have a look at the header information for the first 3 spectra in our collection.
+This not only prints the data itself (in the “measurements” category), but also the metadata associated with the file, such as GPS information.
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">Tyninghame</span><span class="p">.</span><span class="n">spectra</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">Tyninghame</span><span class="p">.</span><span class="n">spectra</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]:</span>
+ <span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>You will notice that the spectra names follow a consistent naming structure – “[name]_[number]”.
+All name values correspond to a particular type of feature sampled. The subsequent number values are the samples acquired of that feature type. 
+The feature types sampled at Tyninghame, and their relation to the name parameter, is as follows:</li>
+</ol>
+
+<ul>
+  <li>Bog – spectra taken of vegetation that covered the saltmarsh bog to the West of the beach. The vegetation was a mix of rye grass, red fescue, and Sphagnum moss species.</li>
+  <li>Driftwood – at various locations on the beeach, driftwood features were found. These features can be of interest to ecological researchers.</li>
+  <li>DrySand – dry sand, areas of the beach that were not under tide or inundated.</li>
+  <li>DrySeaweed – beached seaweed that had dried.</li>
+  <li>EBG – European Beach Grass, <em>Ammophila arenaria</em>, an important coastal dune grass species in Northern Europe. It has a thick root system which stabilizes dune systems.</li>
+  <li>RG – perennial ryegrass, <em>Lolium perenne</em>
+</li>
+  <li>SLG – sea lyme grass, <em>Leymus arenarius</em>, another important coastal dune species in Northern Europe.</li>
+  <li>WetSand – inundated sand</li>
+  <li>WetSeaweed – inundated seaweed</li>
+</ul>
+
+<p>We can take a visual look at the data too:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Tyninghame</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">legend</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">2500</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span> <span class="o">=</span> <span class="s">"upper left"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="part-three--grouping-and-averaging-data">Part Three – Grouping and Averaging Data</h2>
+
+<ol>
+  <li>It can be difficult to assess your data by viewing all spectra at once. We will group the data based on the name given to each type of feature using SpecDAL’s <strong>groupby</strong> function. 
+This groups data based on their file names, in this case the name before the “_” separator e.g. “a”:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">groups</span> <span class="o">=</span> <span class="n">Tyninghame</span><span class="p">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">separator</span><span class="o">=</span><span class="s">'_'</span><span class="p">,</span> <span class="n">indices</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">group_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">groups</span><span class="p">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">group_names</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>We can now limit our graph to show only one end member type, e.g. ‘SLG’:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">groups</span><span class="p">[</span><span class="s">'SLG'</span><span class="p">].</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">legend</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">2500</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span> <span class="o">=</span> <span class="s">"upper left"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <ul>
+      <li>
+<strong>Question:</strong> - How would you modify the above code so that the graph displays the spectra for European Beach Grass?
+        <details class="notice--success">
+    <summary>Answer</summary>
+    Replace groups['SLG'] with groups['EBG']
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li>We can then average each of these groups to produce a collection of means, called “means”:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span> <span class="o">=</span> <span class="n">Collection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'means'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">group_key</span><span class="p">,</span> <span class="n">group_collection</span> <span class="ow">in</span> <span class="n">groups</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+ <span class="n">means</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">group_collection</span><span class="p">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="n">means</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Group means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">2500</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="part-four--interpolation-overlap-matching-and-jump-correction">Part Four – Interpolation, overlap matching, and jump correction</h2>
+<ol>
+  <li>Look again at the print out for your data spectra, using data.head(10) function to print off the first 10 rows of data:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>For SVC instruments, the steps between the wavelengths correspond to the spectral resolution of the instrument, and are not resolved to 1 nm spacing.
+In order to work with our data using standard routines, we would like to interpolate the reflectance measurements so that correspond to wavelengths with 1.0 nm spacing, a process called <strong>interpolation</strong>. 
+This can be done using SpecDAL as follows with the interpolate function:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span><span class="p">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">spacing</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">'linear'</span><span class="p">)</span>
+<span class="n">means</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Take a look again at the 1000 nm region, and 1900 nm region, of the data:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Group means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">950</span><span class="p">,</span> <span class="mi">1050</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">means</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Group means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">1850</span><span class="p">,</span> <span class="mi">1950</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>A field spectrometer is designed so that it contains three different spectrometers, each covering a different range – a VNIR spectrometer to cover the visible to near infrared region (350 to 1000 nm);
+ a NIR spectrometer to cover the broader NIR region (1000 nm to 1900 nm); and a SWIR spectrometer to cover the shortwave infrared region (1900 to 2500 nm).
+Each of these spectrometers overlaps in range, so that the final spectra has duplicated wavelength values. 
+We can resolve this issue by conducted overlap matching routines, which in SpecDAL, is provided by the stitch function:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span><span class="p">.</span><span class="n">stitch</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">'mean'</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>If we inspect the regions again, we find that the duplication in the wavelength region has been removed, but that a small but sharp drop or increase in values persists at these regions, due to the different gain settings of the spectrometer. 
+To resolve this, we can conduct a “jump correction” using SpecDAL:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span><span class="p">.</span><span class="n">jump_correct</span><span class="p">(</span><span class="n">splices</span><span class="o">=</span><span class="p">[</span><span class="mi">980</span><span class="p">,</span> <span class="mi">1880</span><span class="p">],</span> <span class="n">reference</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Plotting again shows that there is improvement in the 1000 nm region, but that the 1900 nm region is still noisy. 
+This is due to the presence of a strong water band absoprtion in this region. Later on, we will remove this region entirely, and interpolated between the extremes.
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="n">means</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Group means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">950</span><span class="p">,</span> <span class="mi">1050</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">means</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Group means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">1850</span><span class="p">,</span> <span class="mi">1950</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="part-five--relative-vs-absolute-reflectance">Part Five – Relative vs Absolute Reflectance</h2>
+<p>Notice from our previous graphs that the y-axes are labelled “Relative Reflectance”. This is because these spectra were recorded relative to the reflectance of the white Spectralon panel.
+We take measurements relative to this panel to approximate the total irradiance coming from the light source (in this case, the Sun) and hitting the object you are interested in taking a spectral measurement of. 
+Because the panel does not reflect 100% of the light that arrives on it’s surface in a completely uniform manner, we need to adjust our “Relative Reflectance” measurements using the panel’s known, laboratory calibrated reflectance to convert our field measurements to absolute reflectance.</p>
+
+<p>We can derive the absolute reflectance then by multiplying our field measurements by the spectral reflectance of the panel for each wavelength. 
+We can use this file to convert our measurements to absolute reflectance, pulling data from our calibration certificate, <strong>SRT_057_2023-0313.csv</strong>, which is located within the download folder.
+Note – we are creating new dataframes that will host the corrected values, but the original dataframe can be corrected without having to assign a new identifier.</p>
+
+<p>As we only calibrate between the values of 350 to 2500 nm, we also top and tail the data to remove the regions 340 nm to 250 nm, and 2500 nm to 2510 nm, which have NaN values (the third line of code in the following cell).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reference_panel</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"SRT_057_2023-03013.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="s">"Wavelength"</span><span class="p">)</span>
+<span class="n">Absolute_Means</span> <span class="o">=</span> <span class="n">means</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">mul</span><span class="p">(</span><span class="n">reference_panel</span><span class="p">[</span><span class="s">'Reflectance'</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">Absolute_Means</span> <span class="o">=</span> <span class="n">Absolute_Means</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">2161</span><span class="p">]</span>
+<span class="n">Absolute_Means</span><span class="p">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="part-six---waterband-removal-over-the-1780-nm-to-1950-nm-range-and-smoothing-across">Part Six –  Waterband removal over the 1780 nm to 1950 nm range, and smoothing across</h2>
+<p>As mentioned previously, the presence of a strong water band over the 1880 nm to 1950 nm range introduces noise and potentially spurious data to our spectra. 
+As a best practice, we should remove regions in our spectra where water band absorption is likely to have introduced noise or error. Water bands also exist at other ranges across the 350 nm to 2500 nm spectrum, 
+such as at 1300 nm and 1500 nm, but can often be ignored when dealing with ground spectroscopy data, where the atmospheric path length between spectrometer to the target is too small for such absorption to have an impact.</p>
+
+<p>To conduct water band absorption removal, we isolate the specified region and replace all values with a NaN value. 
+As many post processing workflows require that your spectral library contains no NaN or zero values, we will interpolate across this region.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Absolute_Means</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1430</span><span class="p">:</span><span class="mi">1630</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Absolute_Means</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">Absolute_Means</span><span class="p">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">'linear'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">Absolute_Means</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Group means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">1700</span><span class="p">,</span> <span class="mi">2200</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Relative Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span> 
+</code></pre></div></div>
+
+<p>To smooth the rest of our data, we will use the scipy pacakge .savgol_filter, which uses a <a href="https://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_filter">Savitzky-Golay</a> fitting technique to smooth 1D array data:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Absolute_Means_smoothed</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">savgol_filter</span><span class="p">(</span><span class="n">Absolute_Means</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                                       <span class="n">columns</span><span class="o">=</span><span class="n">Absolute_Means</span><span class="p">.</span><span class="n">columns</span><span class="p">,</span>
+                                       <span class="n">index</span><span class="o">=</span><span class="n">Absolute_Means</span><span class="p">.</span><span class="n">index</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="part-seven---final-processing-stages-for-data">Part Seven –  Final processing stages for data</h2>
+<p>Let’s take a look at our final data output, where raw .sig files have been amalgamated into groups, averaged, interpolated, and converted to absolute reflectance:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Feature Means'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">2500</span><span class="p">))</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"Wavelength (nm)"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"Absolute Spectral Reflectance"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>We can now export this collection as a spectral library, that will be used in the next session for processing UAV imagery:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Absolute_Means_smoothed</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s">'Tyninghame_Spectral_Lib_SNAP.csv'</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">'</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="wrapup">Wrapup</h1>
+<p>In this session, you’ve learned how to read full range field spectrometer data using Python, and conduct operations on that data to process it to the stage where it can be used for further remote sensing investigations. 
+In the next session, we will go further, using the <strong>Absolute_Means_smoothed</strong> dataframe to generate remote sensing products like vegetation indices, and to convolve hyperspectral data to the mutlispectral bands of common in-orbit sensors.</p>
+
+<p class="notice--danger"><strong>Important</strong>  For the next session, you will use  <strong>Absolute_Means_smoothed</strong> dataframe. Please keep this frame active if progressing to the next session.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2024 <a href="http://localhost:4000">NERC Field Spectroscopy Facility</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

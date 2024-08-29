@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>UAV Imagery Processing with ESA SNAP - NERC Field Spectroscopy Facility</title>
+<meta name="description" content="The NERC FSF Website">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="NERC Field Spectroscopy Facility">
+<meta property="og:title" content="UAV Imagery Processing with ESA SNAP">
+<meta property="og:url" content="http://localhost:4000/training/eodataprocessing/tutorial_4">
+
+
+  <meta property="og:description" content="The NERC FSF Website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/training/eodataprocessing/tutorial_4">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NERC Field Spectroscopy Facility Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide2">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FSF_Small_Logo.png" alt="NERC Field Spectroscopy Facility"></a>
+        
+        <a class="site-title" href="/">
+          NERC Field Spectroscopy Facility
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/loans/">Loans</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/instruments/">Instruments</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/training/">Learning</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/impact/">Impact</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="UAV Imagery Processing with ESA SNAP">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">UAV Imagery Processing with ESA SNAP
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#introduction-to-tutorial">Introduction to Tutorial</a></li>
+<li><a href="#overview-of-field-site">Overview of Field Site</a></li>
+<li>
+<a href="#tutorial-steps">Tutorial Steps</a><ul>
+<li><a href="#part-one--importing-data-into-esa-snap-reprojection-of-data-and-viewing-rgb-imagery">Part One – Importing Data into ESA SNAP, reprojection of data, and viewing RGB imagery</a></li>
+<li><a href="#part-two--generating-an-ndvi-mask">Part Two – Generating an NDVI Mask</a></li>
+</ul>
+</li>
+<li><a href="#wrapup">Wrapup</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="introduction-to-tutorial">Introduction to Tutorial</h1>
+
+<p>Airborne imagery – particularly UAV acquired imagery – is increasingly available for remote sensing research, but how to utilize this resource effectively can be a challenge.
+In this session, we will look at basic operations for handling UAV imagery in the European Space Agency Sentinel Application Platform (ESA SNAP) program, a powerful tool for analysing remote sensing imagery.
+We will look at operations such as NDVI calculation and using basic unsupervised classification techniques. 
+Finally, in the next session, we will incorporate the ground spectroscopy data processed in the earlier session to conduct unsupervised classification of the imagery handled in this session, as well as conduct more
+advanced operations such as spectral unmixing and resampling.</p>
+
+<h1 id="overview-of-field-site">Overview of Field Site</h1>
+
+<p>The data within the workshop folder,<strong>2024_Tyninghame_Survey.dim</strong>, was collected in March 2024 at Tyninghame Links, a coastal habitat encompassing forest, salt marsh, and sand dunes located 40 km East of Edinburgh, UK.
+A multispectral imagery UAV survey, taken using a MAIA S2 Multispectral Camera mounted on a DJI M210 UAV, was taken over the area, covering a variety of different landscape features, including the coastal beach, the sand dune system, the salt marsh bog, and grassland.
+Reflectance spectra of each of these components were recorded using an SVC HR-1024i field spectrometer, and which you have processed in the last tutorial to produce a spectral library. 
+We therefore have a multispectral UAV image, paired with ground reflectance data.</p>
+
+<h1 id="tutorial-steps">Tutorial Steps</h1>
+
+<h2 id="part-one--importing-data-into-esa-snap-reprojection-of-data-and-viewing-rgb-imagery">Part One – Importing Data into ESA SNAP, reprojection of data, and viewing RGB imagery</h2>
+
+<p>The European Space Agency Sentinel Application Platform (SNAP) is a desktop geographic information system (GIS) application specifically developed in mind for handling Sentinel-1, Sentinel-2 and Sentinel-3 data products. 
+SNAP is designed to work best with .dim files, which is the standard I/O product format for the Sentinel Toolbox and the Scientific Tools. The format was chosen because it has a very simple and easy-to-understand structure. 
+However, by default and with plug-ins we can read all types of file formats that you will encounter in remote sensing.</p>
+
+<p>ESA SNAP can be downloaded <a href="https://step.esa.int/main/download/snap-download/">here</a>. For this session, we will only be using ESA SNAP with the standard <strong>Sentinel-2 Toolbox</strong>.</p>
+
+<ol>
+  <li>
+    <p>Open ESA SNAP 
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(189).png" alt="alt"></p>
+  </li>
+  <li>In the Main Toolbar, click File, then Open Product, and then navigate to where you have saved the <strong>2024_Tyninghame_Survey.dim</strong> and Tyninghame Data folder.</li>
+  <li>
+    <p>In the Product Explorer window, we can look at the imported data set. Look at the Bands folder, you will see the 9 MAIA bands, each with their associated centre wavelengths.
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(289).png" alt="alt"></p>
+  </li>
+  <li>
+    <p>The image imported is currently in the WGS 1984 co-ordinate system. ESA SNAP allows us to reproject the image in a different co-ordinate system using Raster tools. We will convert this image to the OSGB 1936 British National Grid system. To do this, with the image selected in the products window, select <strong>Raster</strong>, then <strong>Geometric</strong>, and then <strong>Reprojection</strong>.
+In the window that appears, select <strong>Reprojection Parameters</strong>, then <strong>Predefined CRS</strong>. Press select, and search “British”. Select OSGB 1936, and select Run. A new product will appear in the product explorer, called  <strong>2024_Tyninghame_Survey_reprojected.dim</strong>.
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(292).png" alt="alt"></p>
+  </li>
+  <li>Right click the <strong>2024_Tyninghame_Survey_reprojected.dim</strong> product name.</li>
+  <li>The RGB image will appear in the main window. Note that ESA SNAP will, by default, display only pixels within a range based on the histogram distribution of pixels.
+This means that “extreme” pixels i.e those 2 standard deviations from the median reflectance will be displayed at the maximum reflectance value of those pixels within that range.
+What this means for our image is that the 99.9\% reflectance panel that we used for image calibration will not appear in the window.
+To change the display settings, select – in the <strong>Colour Manipulation</strong> tab – the “Auto adjust to 100% of all pixels” button.
+Repeat this for both green and blue. Notice the change in the output.</li>
+  <li>Under the Optical tab in the Main Toolbar, select Spectrum view. 
+This opens a window giving the spectral data for what ever pixel is centred on in your active window.</li>
+  <li>
+    <p>Select Open RGB Image Window. In the Window that appears, select the bands to use for your image.</p>
+
+    <ul>
+      <li>
+<strong>Question:</strong> – What Sentinel-2 band numbers are equivalent to red, blue and green, and what are their centre wavelength?
+        <details class="notice--success">
+    <summary>Answer</summary>
+    Red is Band number 4, and has its centre wavelength at 664.6 nm.
+    Green is Band number 3, and has its centre wavelength at 559.8 nm.
+    Blue is Band number 2, and has its centre wavelength at 492.4 nm.
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li>Float your cursor over pixels in the RGB image window. Zoom in and out using the mouse scroll window, and pan by left clicking and dragging. 
+Centre your cursor over the reference targets which are beside the “Survey Base Home” marker to have a look at their reflectances. 
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(294).png" alt="alt">
+</li>
+</ol>
+
+<h2 id="part-two--generating-an-ndvi-mask">Part Two – Generating an NDVI Mask</h2>
+<p>SNAP comes with inbuilt functions that allows you to conduct index generation with your images. 
+There are many functions to choose, and more with plug-ins, but for now we will use the standard Normalized Difference Vegetation Index (NDVI) which is in-built to SNAP.</p>
+
+<ol>
+  <li>
+    <p>In the Main Toolbar, select <strong>Optical</strong>, then <strong>Thematic Land Processing</strong>, then <strong>Vegetation Radiometric Indices</strong>, and then select <strong>NDVI Processor</strong>.
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(299).png" alt="alt"></p>
+  </li>
+  <li>In the I/O parameters tab, keep all settings as suggested by SNAP. 
+Note that you can save the output as many different formates, including ENVI, GeoTiff, and csv, which can be useful if you want to conduct further processing outwith SNAP.</li>
+  <li>
+    <p>In processing parameters, set the Red and NIR Source Bands.</p>
+
+    <ul>
+      <li>
+<strong>Question:</strong> – What Sentinel-2 band number is equivalent to broad near infrared (NIR), and what is its centre wavelength?
+        <details class="notice--success">
+    <summary>Answer</summary>
+    The band number associated with broad NIR is band 8, and its centre wavelength is 832.8 nm. 
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li>Select Run. Once complete, a new product will show in your Product Explorer window.</li>
+  <li>
+    <p>Select from the drop down of the new product the Bands sub-folder, then double-click the <strong>ndvi</strong> band. A new image window will appear.
+ <img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(300).png" alt="alt">
+ <img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(301).png" alt="alt"></p>
+  </li>
+  <li>Let’s first synchronize our windows (i.e. if we move our cursor or pan across one image, then it will pan and centre on the other images).
+Press the divided section symbol in toolbar to show your NDVI map alongside your RGB image.</li>
+  <li>In the Navigation window, select the icons “Synchronizes view across multiple windows”,
+and “Synchronizes cursor positions across multiple windows”.</li>
+  <li>Activate your NDVI window by clicking anywhere within the NDVI image.</li>
+  <li>
+    <p>We would like to select pixels over 0.4 NDVI. We can do this using the mask manager.
+In the main toolbar, select View, then Tool Windows, then Mask manager. 
+ <img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(234).png" alt="alt"></p>
+  </li>
+  <li>Click the <strong>f(x)</strong> symbol.</li>
+  <li>
+    <p>In the Expression window, type <code class="language-plaintext highlighter-rouge">ndvi &gt; 0.4</code>, and press OK. 
+ <img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(235).png" alt="alt"></p>
+  </li>
+  <li>Your NVDI image window will now display a red mask, with each pixel in red highlighting that the NDVI value for that pixel exceeds 0.4</li>
+</ol>
+
+<p><img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(304).png" alt="alt"></p>
+
+<h1 id="wrapup">Wrapup</h1>
+
+<p>In this tutorial, you have learned how to import UAV data, in .dim format, into ESA SNAP, reproject the image to a different co-ordinate system, and perform basic imagery operations, including NDVI calculation and mask generation.
+In the next tutorial, which will continue to use the imagery used and products generated in this tutorial, we will discuss how to conduct an unsupervised classification technique to UAV imagery, as well as how to conduct spectral mixing.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2024 <a href="http://localhost:4000">NERC Field Spectroscopy Facility</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Classification of Imagery in ESA SNAP - NERC Field Spectroscopy Facility</title>
+<meta name="description" content="The NERC FSF Website">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="NERC Field Spectroscopy Facility">
+<meta property="og:title" content="Classification of Imagery in ESA SNAP">
+<meta property="og:url" content="http://localhost:4000/training/eodataprocessing/tutorial_5">
+
+
+  <meta property="og:description" content="The NERC FSF Website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/training/eodataprocessing/tutorial_5">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NERC Field Spectroscopy Facility Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide2">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FSF_Small_Logo.png" alt="NERC Field Spectroscopy Facility"></a>
+        
+        <a class="site-title" href="/">
+          NERC Field Spectroscopy Facility
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/loans/">Loans</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/instruments/">Instruments</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/training/">Learning</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/impact/">Impact</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Classification of Imagery in ESA SNAP">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Classification of Imagery in ESA SNAP
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#introduction-to-tutorial">Introduction to Tutorial</a></li>
+<li>
+<a href="#tutorial-steps">Tutorial Steps</a><ul>
+<li><a href="#part-one--unsupervised-classification">Part One – Unsupervised Classification</a></li>
+<li><a href="#part-two--spectral-unmixing">Part Two – Spectral Unmixing</a></li>
+<li><a href="#part-three--downsampling">Part Three – Downsampling</a></li>
+</ul>
+</li>
+<li><a href="#wrapup">Wrapup</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="introduction-to-tutorial">Introduction to Tutorial</h1>
+
+<p>In the last session, you learned how to import UAV imagery, in .dim format, into ESA SNAP and conduct basic operations. 
+In this tutorial, we will show how you can use inbuilt functions in ESA SNAP to conduct unsupervised classification of your imagery, as well as how to
+conduct a process called “spectral unmixing” using the spectral library you created in session 3.</p>
+
+<h1 id="tutorial-steps">Tutorial Steps</h1>
+
+<h2 id="part-one--unsupervised-classification">Part One – Unsupervised Classification</h2>
+
+<p>Classification is a powerful tool that allows us to group objects within our image based on shared characteristics. 
+In remote sensing, those shared characteristics are the reflectances associated with the spectral bands in our data.</p>
+
+<p>Classification can be <strong>supervised</strong> or <strong>unsupervised</strong>.
+In supervised classification, we provide our classification model with the spectral information required to group objects.</p>
+
+<p>If we do not have access to the precise spectral information that can relate a pixel to its exact object identification, or if we’re interested in how well our unclassified analysis performs to a supervised classification technique, we can use <strong>unsupervised classification</strong>.
+This is conducted using machine learning techniques.</p>
+
+<p>Over the last decade, the availability of machine learning has grown rapidly.
+Even with modest computing power, and working with small datasets, we can use open source options to conduct machine learning methods on our data. 
+In this part, we are going to use an unsupervised classification algorithm called <a href="https://en.wikipedia.org/wiki/K-means_clustering">k-means clustering</a>.
+K-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.</p>
+
+<ol>
+  <li>From the product window from the last session, select the RGB image of the survey.</li>
+  <li>As classification techniques are computationally challenging, they can take some time to process.
+For demonstration purposes, we’re going take a subset of our spatial data that will be processed. .</li>
+  <li>Select <strong>Raster</strong>, then <strong>Subset</strong>.</li>
+  <li>Set X scene start as 500, and X scene end as 2750. Set Y scene start as 1500, and Y scene end as 3200.</li>
+  <li>Ensure that Band Subset includes all bands.</li>
+  <li>
+    <p>Click OK.</p>
+
+    <ul>
+      <li>
+<strong>Question:</strong> - What is the process to generate an RGB image in ESA SNAP? Conduct this to generate an RGB image of your spatial subset.
+        <details class="notice--success">
+    <summary>Answer</summary>
+    Select Open RGB Image Window. In the Window that appears, select the bands that match the red, green and blue portions of the EM spectrum, e.g. bands 4, 3 and 2, respectively, when using Sentinel-2 data.
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>With the RGB of the subset selected, select <strong>Raster</strong>, <strong>Classification</strong>, <strong>Unsupervised Classification</strong>, and <strong>K-Means Clustering</strong>.
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(306).png" alt="alt"></p>
+  </li>
+  <li>Set number of clusters to 5, iterations to 30, and select all source bands. Select Run.</li>
+  <li>Inspect the output by selecting in the product explorer <strong>2024_Tyninghame_Survey_kmeans.dim</strong>, and under bands, double clicking Class Indices.
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(308).png" alt="alt">
+</li>
+</ol>
+
+<h2 id="part-two--spectral-unmixing">Part Two – Spectral Unmixing</h2>
+
+<p>Recall that in session 3 of this online tutorial, you created a file named <strong>Tyninghame_Spectral_Lib_SNAP.csv</strong>.</p>
+
+<p>In this file is the output the ground spectroscopy data collected at Tyninghame, split into several feature groups.</p>
+
+<p>This ground spectroscopy data is going to be used to classify all of the pixels in our image into one of these feature classes (or more technically, highlight the abundance of each class within each pixel) using a technique known as spectral unmixing.</p>
+
+<p><a href="%7Bhttps://ieeexplore.ieee.org/document/974727%7D">Spectral unmixing</a> is the procedure by which the measured spectrum of a mixed pixel is decomposed into a collection of constituent spectra, or endmembers, and a set of corresponding fractions, or abundances, that indicate the proportion of each endmember present in the pixel.</p>
+
+<ol>
+  <li>First, let’s add some spatial data to the image. When collecting field spectra with the SVC HR-1024i, it will also provide you with GPS information. 
+This helps with classification, as it directly matches your pixel to your sampling location. This information is found in the <strong>Ground_spectroscopy_survey.txt</strong> file in your workshop folder.</li>
+  <li>
+    <p>Pins can be added by accessing <strong>View</strong> in the main toolbar, then <strong>Tool Windows</strong>, then <strong>Pin Manager</strong>.
+3.A new Pin Manager window will appear, usually at the bottom of your window.
+Ensuring that the reprojected RGB window is selected, select <strong>Import Pins</strong> from this window, and in Placemark files, select Flat Text Format.
+Navigate to the <strong>Ground_spectroscopy_survey.txt</strong>, and then Open. The pins will now display in your active window.
+<img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(310).png" alt="alt"></p>
+  </li>
+  <li>In the Main Toolbar, select <strong>Optical</strong>, then select Spectral <strong>Unmixing</strong>.</li>
+  <li>Ensure that the source product is set to the reprojected image, <strong>2024_Tyninghame_Survey_reprojected</strong>
+</li>
+  <li>If you press the Help button, then Help again, a new window will appear that discusses the algorithm used by SNAP during the unmixing. Note the end section, which says which format the endmembers must be in.</li>
+  <li>In the <strong>Endmembers</strong> windows, click + to add an endmember file. Navigate to, and select, <strong>Tyninghame_Spectral_Lib_SNAP.csv</strong>. As the number of features can not exceed the number of bands - 1, and as we wish to reduce computation speed, we’re going to remove from the list RG and Driftwood from the list.</li>
+  <li>Choose <strong>Fully Constrained LSU</strong> to output fractional abundances.</li>
+  <li>Highlight all the spectral source bands in the parameters window.</li>
+  <li>A new product will appear in your product window.</li>
+  <li>
+    <p>A fully constrained LSU model will provide a number between 0 and 1 for each pixel for each feature class. A value of 1 suggests that that pixel’s reflectance value can be 100\% attributed to the respective feature class. Double click the <strong>DrySand_mean_abundance</strong> band.</p>
+
+    <ul>
+      <li>
+<strong>Question:</strong> - What is the process to generate a mask? Conduct this to generate a mask for the DrySand_mean_abundance output, highlighting only pixels where 90% of their reflectances can be attributed to the DrySand feature class.
+        <details class="notice--success">
+    <summary>Answer</summary>
+    In the main toolbar, select View, then Tool Windows, then Mask manager. Click the f(x) symbol. In the Expression window, type DrySand&gt; 0.9, and press OK. 
+  </details>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="http://localhost:4000/assets/images/training/eodata/session_4/Screenshot%20(312).png" alt="alt"></p>
+
+<h2 id="part-three--downsampling">Part Three – Downsampling</h2>
+<p>Another advantage of using field spectroscopy and high-resolution UAV multispectral surveys is the ease by which you can downsample your imagery to simulate the pixel footprint of your satellite of interest.</p>
+
+<p>This is particularly useful with the MAIA camera, since its spectral response already replicates that of Sentinel 2.</p>
+
+<ol>
+  <li>Select the <strong>2024_Tyninghame_Survey_reprojected</strong> product.</li>
+  <li>In the Main Toolbar, select <strong>Raster</strong>, then <strong>Geometric</strong>, then <strong>Resampling</strong>.</li>
+  <li>
+    <p>In the resampling parameters tab, select by pixel resolution.</p>
+
+    <ul>
+      <li>
+<strong>Question:</strong> - The pixel resolution you select should match that of whatever band you use which has the coarsest resolution. For this example, we will only be using Band 3, 4,5 and 8 . What is the pixel spatial resolution for these bands on Sentinel-2?
+        <details class="notice--success">
+    <summary>Answer</summary>
+    10 m. 
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li>Choose <strong>Mean</strong> as the downsampling method.</li>
+  <li>Change the save file name from _resampled to the spatial resolution you’ve given, i.e. _[spatial_resolution]</li>
+  <li>A new product is created and displayed in the Product Explorer.</li>
+  <li>Right click, and select Open RGB image. The resulting output is how it would look if this was a Sentinel-2 image.</li>
+  <li>Press the Tile Evenly button to tile you outputs evenly.</li>
+  <li>You can conduct exactly the same operations on this as you’ve done before. Try it by doing an NDVI output.</li>
+</ol>
+
+<h1 id="wrapup">Wrapup</h1>
+
+<p>You have now been introduced to the ESA SNAP application, and used it to conduct an unsupervised classification of a UAV multispectral image, as well as conduct spectral unmixing using ground acquired spectral information to determine fractional abundances.</p>
+
+<p>The last section talked about downsampling, and drawing equivalent to Sentinel-2 imagery. The tools acquired here can be used for any aerial or satellite imagery that can be imported into ESA SNAP.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2024 <a href="http://localhost:4000">NERC Field Spectroscopy Facility</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

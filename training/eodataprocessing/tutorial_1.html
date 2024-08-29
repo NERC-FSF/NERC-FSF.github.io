@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+--><html lang="en" class="no-js">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Computer Setup Instructions - NERC Field Spectroscopy Facility</title>
+<meta name="description" content="The NERC FSF Website">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="NERC Field Spectroscopy Facility">
+<meta property="og:title" content="Computer Setup Instructions">
+<meta property="og:url" content="http://localhost:4000/training/eodataprocessing/tutorial_1">
+
+
+  <meta property="og:description" content="The NERC FSF Website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/training/eodataprocessing/tutorial_1">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NERC Field Spectroscopy Facility Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images//favicon-16x16.png">
+<link rel="manifest" href="/assets/images//site.webmanifest">
+<link rel="mask-icon" href="/assets/images//safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide2">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FSF_Small_Logo.png" alt="NERC Field Spectroscopy Facility"></a>
+        
+        <a class="site-title" href="/">
+          NERC Field Spectroscopy Facility
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/loans/">Loans</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/instruments/">Instruments</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/training/">Learning</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/impact/">Impact</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Computer Setup Instructions">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Computer Setup Instructions
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#introduction">Introduction</a></li>
+<li>
+<a href="#windows">Windows</a><ul>
+<li><a href="#python">Python</a></li>
+<li><a href="#snap">SNAP</a></li>
+</ul>
+</li>
+<li>
+<a href="#macos">MacOS</a><ul>
+<li><a href="#python-1">Python</a></li>
+<li><a href="#snap-1">SNAP</a></li>
+</ul>
+</li>
+<li>
+<a href="#linux">Linux</a><ul>
+<li><a href="#python-2">Python</a></li>
+<li><a href="#snap-2">SNAP</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="introduction">Introduction</h1>
+<p>The “Earth Observation Data Processing Tutorial”, provided in the next four sections, uses the Python programming language and the European Space Agency’s Sentinel Application Platform (ESA SNAP) software. 
+The data that will be used for the practical session can be downloaded <a href="https://github.com/NERC-FSF/EODataProcessing/raw/main/EO_Data.zip?download=">here</a>.
+The suggested installation guide for both Python and ESA SNAP will be provided for Windows, MacOS and Linux in the following section, although users are free to follow their own method.</p>
+
+<p class="notice--danger"><strong>Note</strong>  If you receive any errors during installation, please contact the facility for help, at fsf@ed.ac.uk</p>
+
+<h1 id="windows">Windows</h1>
+
+<h2 id="python">Python</h2>
+<ol>
+  <li>Download the <a href="https://www.anaconda.com/download?utm_source=anacondadoc&utm_medium=documentation&utm_campaign=download&utm_content=installwindows">Anaconda Data Science Platform for Windows</a>
+</li>
+  <li>Install, <a href="https://docs.anaconda.com/anaconda/install/windows/">following the instructions provided</a>
+</li>
+  <li>Open “Anaconda Navigator”, and select “Environments” on the left hand column.</li>
+  <li>Select “Create”.</li>
+  <li>In the window that appears, name your environment <strong>field_spectroscopy</strong>
+</li>
+  <li>Select Python version 3.11 or over.</li>
+  <li>Once the environment is installed, click the <strong>Play</strong> icon next to the <strong>field_spectroscopy</strong> environment name</li>
+  <li>Select <strong>Open Terminal</strong>
+</li>
+  <li>In the command prompt window that appears, copy and paste the following:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab git
+</code></pre></div>    </div>
+  </li>
+  <li>Once installed, copy and paste the following in the command prompt:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>git+https://github.com/NERC-FSF/SpecDAL.git
+</code></pre></div>    </div>
+  </li>
+  <li>Once installed, copy and paste the following in the command prompt:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>git+https://github.com/NERC-FSF/FieldSpecUtils.git
+</code></pre></div>    </div>
+  </li>
+  <li>Close the command prompt window, and return to Anaconda Navigator.</li>
+  <li>With the <strong>field_spectroscopy</strong> environment still activate, navigate to <strong>Home</strong>.</li>
+  <li>Launch Jupyter Lab from the GUI.</li>
+  <li>In Jupyter-Lab, navigate to the folder extracted from the .zip download.</li>
+</ol>
+
+<h2 id="snap">SNAP</h2>
+<ol>
+  <li>Navigate to the <a href="https://step.esa.int/main/download/snap-download/">ESA SNAP Download Page</a>.</li>
+  <li>For Windows, select the Windows 64-Bit, Sentinel Toolbox, Main Download.</li>
+  <li>Run the .exe file downloaded, and follow the installation instructions.</li>
+</ol>
+
+<h1 id="macos">MacOS</h1>
+
+<h2 id="python-1">Python</h2>
+<ol>
+  <li>Download the <a href="https://www.anaconda.com/download?utm_source=anacondadoc&utm_medium=documentation&utm_campaign=download&utm_content=installmacgraphical">Anaconda Data Science Platform for MacOS X</a>
+</li>
+  <li>Install, <a href="https://docs.anaconda.com/anaconda/install/mac-os/">following the instructions provided</a>
+</li>
+  <li>Open “Anaconda Navigator”, and select “Environments” on the left hand column.</li>
+  <li>Select “Create”.</li>
+  <li>In the window that appears, name your environment <strong>field_spectroscopy</strong>
+</li>
+  <li>Select Python version 3.11 or over.</li>
+  <li>Once the environment is installed, click the <strong>Play</strong> icon next to the <strong>field_spectroscopy</strong> environment name</li>
+  <li>Select <strong>Open Terminal</strong>
+</li>
+  <li>In the Terminal that appears, copy and paste the following:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab git
+</code></pre></div>    </div>
+  </li>
+  <li>Once installed, copy and paste the following in the Terminal:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>git+https://github.com/NERC-FSF/SpecDAL.git
+</code></pre></div>    </div>
+  </li>
+  <li>Once installed, copy and paste the following in the command prompt:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>git+https://github.com/NERC-FSF/FieldSpecUtils.git
+</code></pre></div>    </div>
+  </li>
+  <li>Close the Terminal, and return to Anaconda Navigator.</li>
+  <li>With the <strong>field_spectroscopy</strong> environment still activate, navigate to <strong>Home</strong>.</li>
+  <li>Launch Jupyter Lab from the GUI.</li>
+  <li>In Jupyter-Lab, navigate to the folder extracted from the .zip download.</li>
+</ol>
+
+<h2 id="snap-1">SNAP</h2>
+<ol>
+  <li>Navigate to the <a href="https://step.esa.int/main/download/snap-download/">ESA SNAP Download Page</a>.</li>
+  <li>For Windows, select the MacOS X, Sentinel Toolbox, Main Download.</li>
+  <li>Right click the .dmg file downloaded, select Open, and follow the installation instructions.</li>
+</ol>
+
+<h1 id="linux">Linux</h1>
+
+<h2 id="python-2">Python</h2>
+<ol>
+  <li>Ensure that you have the correct <a href="https://docs.anaconda.com/anaconda/install/linux/#prerequisites">pre-requisite packages installed</a>
+</li>
+  <li>Install, <a href="https://docs.anaconda.com/anaconda/install/linux/">following the instructions provided</a>
+</li>
+  <li>Open “Anaconda Navigator”, and select “Environments” on the left hand column.</li>
+  <li>Select “Create”.</li>
+  <li>In the window that appears, name your environment <strong>field_spectroscopy</strong>
+</li>
+  <li>Select Python version 3.11 or over.</li>
+  <li>Once the environment is installed, click the <strong>Play</strong> icon next to the <strong>field_spectroscopy</strong> environment name</li>
+  <li>Select <strong>Open Terminal</strong>
+</li>
+  <li>In the Terminal that appears, copy and paste the following:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge jupyterlab git
+</code></pre></div>    </div>
+  </li>
+  <li>Once installed, copy and paste the following in the Terminal:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>git+https://github.com/NERC-FSF/SpecDAL.git
+</code></pre></div>    </div>
+  </li>
+  <li>Once installed, copy and paste the following in the command prompt:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>git+https://github.com/NERC-FSF/FieldSpecUtils.git
+</code></pre></div>    </div>
+  </li>
+  <li>Close the Terminal, and return to Anaconda Navigator.</li>
+  <li>With the <strong>field_spectroscopy</strong> environment still activate, navigate to <strong>Home</strong>.</li>
+  <li>Launch Jupyter Lab from the GUI.</li>
+  <li>In Jupyter-Lab, navigate to the folder extracted from the .zip download.</li>
+</ol>
+
+<h2 id="snap-2">SNAP</h2>
+<ol>
+  <li>Navigate to the <a href="https://step.esa.int/main/download/snap-download/">ESA SNAP Download Page</a>.</li>
+  <li>For Linux, select the Linux 64-bit, Sentinel Toolbox, Main Download.</li>
+  <li>In a Terminal, copy and paste the following, replacing /path/to/your/ with the correct path file:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>bash bash /path/to/your/esa-snap_sentinel_linux-10.0.0.sh
+</code></pre></div>    </div>
+  </li>
+  <li>Follow the installation instructions.</li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2024 <a href="http://localhost:4000">NERC Field Spectroscopy Facility</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
